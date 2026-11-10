@@ -1,6 +1,6 @@
 # Win-Pad Connect Pad（Android / OPPO Pad 4 Pro）
 
-配套 [Win-Pad Connect Host](../host-windows/README.md) 的平板端：**发现主机 → 读取体检 → 测链路 → 把参数交给 Moonlight**。
+配套 [Win-Pad Connect](../host-windows/README.md) 的平板端：**发现主机 → 读取体检 → 测链路 → 把参数交给 Moonlight**。
 
 它不实现串流，也不修改 Moonlight 协议；真正的画面与输入由 Sunshine + Moonlight 客户端完成。这样做的原因是：低延迟是这条基线的核心资产，重写传输层会把优势一起丢掉。
 
@@ -59,8 +59,16 @@ gradle wrapper          # 首次可在有网络的机器上生成 wrapper
 adb install -r app/build/outputs/apk/debug/app-debug.apk
 ```
 
+也可以用成品仓库里的手写构建脚本（不需要 Gradle，直接用 aapt2 / javac / d8 / apksigner）：
+
+```powershell
+$env:ANDROID_SDK_ROOT = "C:\wpc-apk\sdk"
+python scriptsuild-apk.py
+```
+
 说明：
 
+- 手工构建时 `AndroidManifest.xml` 必须带 `package="com.padlink.pad"`（Gradle 由 namespace 注入，aapt2 不会）。
 - 未附带 `gradle-wrapper.jar`（二进制，当前环境无法下载）；有 Android Studio 时不需要它，命令行首次用系统 Gradle 生成即可。
 - 不依赖 AndroidX / Kotlin / 第三方库，AGP 8.5.2 与 JDK 17 是全部要求。
 - 明文 HTTP 仅用于局域网内读取 profile 与测速，不承载视频流；已设 `usesCleartextTraffic="true"`。
@@ -77,7 +85,7 @@ run-core-tests.bat
 
 ## 使用流程
 
-1. Windows 上启动 **Win-Pad Connect Host**，点“启动接入服务”，记住配对码。
+1. Windows 上启动 **Win-Pad Connect**，点“启动接入服务”，记住配对码。
 2. Pad 与电脑连同一 Wi-Fi（异地则两端先登录 Tailscale）。
 3. 打开 Win-Pad Connect Pad → “搜索主机” → 点选主机 → 输入配对码。
 4. 看“主机体检”：红/黄项按提示回电脑处理；先保证 1080p60 跑通。

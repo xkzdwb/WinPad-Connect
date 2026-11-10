@@ -39,7 +39,7 @@ public final class CoreTests {
     }
 
     private static void testProfile() {
-        String body = "{\"service\":\"padlink\",\"protocol\":1,\"app\":\"Win-Pad Connect Host 1.0.0\","
+        String body = "{\"service\":\"padlink\",\"protocol\":1,\"app\":\"Win-Pad Connect 1.0.0\","
                 + "\"host\":{\"name\":\"XKlcq-MDesktop\",\"os\":\"Windows 11\",\"cpu\":\"i7-13700HX\","
                 + "\"ram_gb\":15.7,\"gpu\":\"RTX 5060\",\"encoder\":\"nvenc\","
                 + "\"encoder_label\":\"NVIDIA NVENC\",\"admin\":false},"

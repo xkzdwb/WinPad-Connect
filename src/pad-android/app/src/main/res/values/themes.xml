@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.Win-Pad Connect" parent="android:Theme.Material.NoActionBar">
+    <style name="Theme.WinPad" parent="android:Theme.Material.NoActionBar">
         <item name="android:windowBackground">@color/padlink_bg</item>
         <item name="android:colorAccent">@color/padlink_accent</item>
         <item name="android:statusBarColor">@color/padlink_bg</item>

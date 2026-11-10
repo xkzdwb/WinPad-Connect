@@ -118,7 +118,7 @@ public final class Discovery {
                 }
             }
             return new FoundHost(
-                    Json.string(json, "name", "Win-Pad Connect Host"),
+                    Json.string(json, "name", "Win-Pad Connect"),
                     sourceIp,
                     Json.integer(json, "port", 47800),
                     Json.bool(json, "code_required", true),

@@ -1,2 +1,3 @@
-b6ee38fb9a9974273c6e7686c79dd4d32613f77a5c3bef22e03cec66864a3d64  Win-Pad-Connect-Setup-1.0.0.exe
-856d8b2432f3e16c332ea42aaec4dc575840cd90c93082a59d07e90a857db2c6  Win-Pad-Connect-1.0.0-source.zip
+fa60940dbf953df82e1f40bbcc590bc66bb85af98f569d25b047e54558e2c994  Win-Pad-Connect-Setup-1.0.0.exe
+43afd055d6af31c2620ecacaaae721d5fa02b5034d48f57798cf302e31a41f82  Win-Pad-Connect-1.0.0-source.zip
+b4933055d4203decbddb86f520ba47b5656a8c3220c5b4665522d26068d34a87  Win-Pad-Connect-Pad-1.0.0.apk

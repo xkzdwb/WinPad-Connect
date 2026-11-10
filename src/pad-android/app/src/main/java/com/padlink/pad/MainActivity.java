@@ -300,7 +300,7 @@ public class MainActivity extends Activity {
                     if (error != null) {
                         discoveryStatus.setText(error + "，可改用手动地址。");
                     } else if (total == 0) {
-                        discoveryStatus.setText("没有搜到主机。确认 Win-Pad Connect Host 已启动，或手动填 IP。");
+                        discoveryStatus.setText("没有搜到主机。确认 Win-Pad Connect 已启动，或手动填 IP。");
                     } else {
                         discoveryStatus.setText("发现 " + total + " 台主机，点选即可读取体检。");
                     }
@@ -370,7 +370,7 @@ public class MainActivity extends Activity {
         input.setHintTextColor(FAINT);
         new AlertDialog.Builder(this)
                 .setTitle("需要配对码")
-                .setMessage("主机开启了配对校验，请输入 Win-Pad Connect Host 界面上显示的 6 位数字。")
+                .setMessage("主机开启了配对校验，请输入 Win-Pad Connect 界面上显示的 6 位数字。")
                 .setView(input)
                 .setPositiveButton("连接", (dialog, which) -> {
                     String code = input.getText().toString().trim();
