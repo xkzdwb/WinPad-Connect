@@ -1,0 +1,2 @@
+b6ee38fb9a9974273c6e7686c79dd4d32613f77a5c3bef22e03cec66864a3d64  Win-Pad-Connect-Setup-1.0.0.exe
+856d8b2432f3e16c332ea42aaec4dc575840cd90c93082a59d07e90a857db2c6  Win-Pad-Connect-1.0.0-source.zip

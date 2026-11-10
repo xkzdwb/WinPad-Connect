@@ -1,0 +1,10 @@
+Win-Pad Connect 1.0.0
+=====================
+
+1. 双击 Win-Pad Connect.exe 启动（需要 Python 3.10+）。
+2. 首次启动会自动开启接入服务，端口 47800，配对码在“接入服务”页。
+3. Sunshine 未安装时，先按 docs/deployment.md 安装 Foundation Sunshine。
+4. 平板端安装 Win-Pad Connect Pad，与电脑同一 Wi-Fi 后发现主机。
+
+数据目录：%APPDATA%\Win-Pad Connect
+卸载：开始菜单 → Win-Pad Connect → 卸载，或设置 → 应用。

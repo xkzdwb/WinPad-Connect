@@ -1,0 +1,4 @@
+// Win-Pad Connect Pad：只依赖 Android 平台 API，不使用 AndroidX / Kotlin，便于在任意 AGP 8.x 环境编译。
+plugins {
+    id("com.android.application") version "8.5.2" apply false
+}

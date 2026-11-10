@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="padlink_bg">#0B1220</color>
+    <color name="padlink_card">#131E33</color>
+    <color name="padlink_text">#E6EDF7</color>
+    <color name="padlink_muted">#8DA2C0</color>
+    <color name="padlink_accent">#3DDC97</color>
+</resources>
